@@ -61,7 +61,6 @@ async function handleDownload(req, res) {
   }
 
   file.downloadCount++;
-  console.log(file.downloadCount);
   await file.save(); //saving file in database
 
   res.download(file.path, file.originalName); //File to be downloaded from file.path and give file.originalName name
