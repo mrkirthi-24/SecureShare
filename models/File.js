@@ -18,4 +18,4 @@ const File = new mongoose.Schema({
   },
 });
 
-module.exports = mongoose.model("File", File); //name of table in our database, schema name
+module.exports = mongoose.model("File", File); //name of collection in our database, schema name
